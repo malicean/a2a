@@ -7,9 +7,9 @@ jobs:
   client:
     runs-on: ubuntu-latest
     steps:
-      run: ./client.sh
+      - run: ./client.sh
   server:
     runs-on: ubuntu-latest
     steps:
-      run: docker build -t a2a:0.0.0 .
-      run: docker save -o output/server a2a:0.0.0
+      - run: docker build -t a2a:0.0.0 .
+      - run: docker save -o output/server a2a:0.0.0
