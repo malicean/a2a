@@ -7,9 +7,26 @@ jobs:
   client:
     runs-on: ubuntu-latest
     steps:
-      - run: ./client.sh
+      - uses: actions/checkout@v2
+      - run: |
+          cp -rfL src/universal src/overrides/client tmp/
+
+          cd tmp
+          mkdir -p bin
+          curl -L -o bin/version.json 'https://fabricmc.net/download/technic?yarn=1.17.1%2Bbuild.63&loader=0.12.2'
+
+          zip -9r ../output/client.zip .
+      - uses: actions/upload-artifact@v2
+        with:
+          name: client
+          path: tmp/**
   server:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - run: docker build -t a2a:0.0.0 .
-      - run: docker save -o output/server a2a:0.0.0
+      - run: docker save -o server a2a:0.0.0
+      - uses: actions/upload-artifact@v2
+        with:
+          name: server
+          path: server
