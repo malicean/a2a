@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          cp -rfL src/universal src/overrides/client tmp/
+          cp -rfL src/universal tmp/
 
           cd tmp
           mkdir -p bin
