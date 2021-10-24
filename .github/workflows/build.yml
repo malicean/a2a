@@ -10,8 +10,8 @@ jobs:
       - uses: actions/checkout@v2
       - run: |
           cp -rfL src/universal tmp/
-
           cd tmp
+
           mkdir -p bin
           curl -L -o bin/version.json 'https://fabricmc.net/download/technic?yarn=1.17.1%2Bbuild.63&loader=0.12.2'
       - uses: actions/upload-artifact@v2
@@ -22,9 +22,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: docker build -t a2a:0.0.0 .
-      - run: docker save -o server a2a:0.0.0
+      - run: |
+          cp -rfL src/universal src/overrides/server tmp/
+          cd tmp
+
+          curl -L -o installer.jar https://maven.fabricmc.net/net/fabricmc/fabric-installer/0.8.1/fabric-installer-0.8.1.jar
+          java -jar installer.jar server -downloadMinecraft -mcversion 1.17.1
+          rm installer.jar
       - uses: actions/upload-artifact@v2
         with:
           name: server
-          path: server
+          path: tmp/**
