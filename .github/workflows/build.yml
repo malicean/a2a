@@ -9,6 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
+          mkdir tmp
           cp -rfL src/universal tmp/
           cd tmp
 
@@ -23,6 +24,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
+          mkdir tmp
           cp -rfL src/universal src/overrides/server tmp/
           cd tmp
 
