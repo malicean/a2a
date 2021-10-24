@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v2
       - run: |
           mkdir tmp
-          cp -rfL src/universal tmp/
+          cp -rfL src/universal/* tmp/
           cd tmp
 
           mkdir -p bin
@@ -25,7 +25,7 @@ jobs:
       - uses: actions/checkout@v2
       - run: |
           mkdir tmp
-          cp -rfL src/universal src/overrides/server tmp/
+          cp -rfL src/{universal,overrides/server}/* tmp/
           cd tmp
 
           curl -L -o installer.jar https://maven.fabricmc.net/net/fabricmc/fabric-installer/0.8.1/fabric-installer-0.8.1.jar
