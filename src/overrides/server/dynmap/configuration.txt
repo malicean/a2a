@@ -43,8 +43,8 @@ components:
     sendhealth: true
     sendposition: true
     allowwebchat: true
-    webchat-interval: 5
-    hidewebchatip: false
+    webchat-interval: 1
+    hidewebchatip: true
     trustclientname: false
     includehiddenplayers: false
     # (optional) if true, color codes in player display names are used
@@ -52,7 +52,7 @@ components:
     # (optional) if true, player login IDs will be used for web chat when their IPs match
     use-player-login-ip: true
     # (optional) if use-player-login-ip is true, setting this to true will cause chat messages not matching a known player IP to be ignored
-    require-player-login-ip: false
+    require-player-login-ip: true
     # (optional) block player login IDs that are banned from chatting
     block-banned-player-chat: true
     # Require login for web-to-server chat (requires login-enabled: true)
@@ -66,7 +66,7 @@ components:
   #  # Optional - make player hidden when they are under cover (#=sky light level,0=underground,15=open to sky)
   #  hideifundercover: 14
   #  # (Optional) if true, players that are crouching/sneaking will be hidden 
-    hideifsneaking: false
+    hideifsneaking: true
     # If true, player positions/status is protected (login with ID with dynmap.playermarkers.seeall permission required for info other than self)
     protected-player-info: false
     # If true, hide players with invisibility potion effects active
@@ -333,9 +333,9 @@ disable-webserver: false
 allow-symlinks: true
 
 # Enable login support
-login-enabled: true
+login-enabled: false
 # Require login to access website (requires login-enabled: true)
-login-required: true
+login-required: false
 
 # Period between tile renders for fullrender, in seconds (non-zero to pace fullrenders, lessen CPU load)
 timesliceinterval: 0.0
