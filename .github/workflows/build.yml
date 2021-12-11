@@ -14,7 +14,7 @@ jobs:
           cd tmp
 
           mkdir -p bin
-          curl -L -o bin/version.json 'https://fabricmc.net/download/technic?yarn=1.18%2Bbuild.1&loader=0.12.8'
+          curl -L -o bin/version.json 'https://fabricmc.net/download/technic/?yarn=1.18.1%2Bbuild.2&loader=0.12.11'
       - uses: actions/upload-artifact@v2
         with:
           name: client
@@ -29,7 +29,7 @@ jobs:
           cd tmp
 
           curl -L -o installer.jar 'https://maven.fabricmc.net/net/fabricmc/fabric-installer/0.10.2/fabric-installer-0.10.2.jar'
-          java -jar installer.jar server -downloadMinecraft -mcversion 1.18
+          java -jar installer.jar server -downloadMinecraft -mcversion 1.18.1
           rm installer.jar
       - uses: actions/upload-artifact@v2
         with:
