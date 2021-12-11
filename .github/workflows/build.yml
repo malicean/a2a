@@ -10,11 +10,8 @@ jobs:
       - uses: actions/checkout@v2
       - run: |
           mkdir tmp
-          cp -rfL src/universal/* tmp/
+          cp -rfL src/{universal,overrides/client}/* tmp/
           cd tmp
-
-          mkdir -p bin
-          curl -L -o bin/version.json 'https://fabricmc.net/download/technic?yarn=1.18%2Bbuild.1&loader=0.12.11'
       - uses: actions/upload-artifact@v2
         with:
           name: client
