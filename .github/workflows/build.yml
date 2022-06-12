@@ -19,9 +19,18 @@ jobs:
           file: src/pack.toml
           key: version
           value: ${{ steps.semver.outputs.non-prefixed }}
+      - uses: dawidd6/action-download-artifact@v2
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          repo: packwiz/packwiz
+          workflow: go.yml
+          workflow_conclusion: success
+          branch: master
+          event: push
+          name: Linux 64-bit x86
       - run: |
-          go install github.com/packwiz/packwiz@latest
-          packwiz modrinth export --meta-folder-base src --pack-file src/pack.toml -o all.mrpack
+          chmod +x packwiz
+          ./packwiz modrinth export --meta-folder-base src --pack-file src/pack.toml -o all.mrpack
       - uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
