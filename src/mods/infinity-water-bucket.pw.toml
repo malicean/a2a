@@ -1,0 +1,13 @@
+name = "Infinity Water Bucket"
+filename = "Infinity-Water-Bucket-Fabric-1.19-2.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/nNMXZUPi/versions/1.19-2.0.0-fabric/Infinity-Water-Bucket-Fabric-1.19-2.0.0.jar"
+hash-format = "sha1"
+hash = "57b79fc06c0cddb13fa5977984763117e90818e3"
+
+[update]
+[update.modrinth]
+mod-id = "nNMXZUPi"
+version = "lgNyqwIG"
