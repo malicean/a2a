@@ -1,34 +1,30 @@
 on:
   push:
-    branches:
-      - main
+    tags:
+      - v*.*.*
     
 jobs:
-  client:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: |
-          mkdir tmp
-          cp -rfL src/{universal,overrides/client}/* tmp/
-          cd tmp
-      - uses: actions/upload-artifact@v2
         with:
-          name: client
-          path: tmp/**
-  server:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - run: |
-          mkdir tmp
-          cp -rfL src/{universal,overrides/server}/* tmp/
-          cd tmp
-
-          curl -L -o installer.jar 'https://maven.fabricmc.net/net/fabricmc/fabric-installer/0.10.2/fabric-installer-0.10.2.jar'
-          java -jar installer.jar server -downloadMinecraft -mcversion 1.18
-          rm installer.jar
-      - uses: actions/upload-artifact@v2
+          fetch-depth: 0
+      - uses: LykkeBusiness/get-semver-from-tag-action@v1.0.2
+        id: semver
         with:
-          name: server
-          path: tmp/**
+          tag: ${{ github.ref }}
+      - uses: ciiiii/toml-editor@1.0.0
+        with:
+          file: src/pack.toml
+          key: version
+          value: ${{ steps.semver.outputs.non-prefixed }}
+      - run: |
+          go install github.com/packwiz/packwiz@latest
+          packwiz modrinth export --meta-folder-base src --pack-file src/pack.toml -o all.mrpack
+      - uses: marvinpinto/action-automatic-releases@latest
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          prerelease: false
+          files: |
+            all.mrpack

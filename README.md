@@ -1,3 +1,3 @@
 # Ashes to Ash's
 
-A minecraft modpack for the intent of playing with friends. Hosted here because it makes it easier to collaborate with said friends on mod/config changes, and I don't want to deal with the moderation of CurseForge/ATLauncher.
+A minecraft modpack for the intent of playing with friends, created using the [packwiz](https://github.com/packwiz/packwiz) format, intended for consumption as a [Modrinth](https://modrinth.com) modpack.
