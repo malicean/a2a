@@ -11,7 +11,7 @@ metafile = true
 
 [[files]]
 file = "mods/adorn.pw.toml"
-hash = "8c176454499f3df2e0059265e692677864758980931140704c34fa9369b6bc19"
+hash = "6f20081fb3d44b2d8dff5ba430c050d55134dab417e67d9689dc67d56bf74060"
 metafile = true
 
 [[files]]
@@ -26,7 +26,7 @@ metafile = true
 
 [[files]]
 file = "mods/architectury-api.pw.toml"
-hash = "a8fb4be44cbfe7835c4ebfeae4fa89f7dd71965fef08e5671f77b625b4e06414"
+hash = "087e20d9f6a50f1e9167507f74a15857eb67d76ee69fa22be52bd0d14c15bb5c"
 metafile = true
 
 [[files]]
@@ -51,12 +51,12 @@ metafile = true
 
 [[files]]
 file = "mods/clumps.pw.toml"
-hash = "af075002abb9bcafef1fa6ed6de8be8101924fec798744b8131fa1f1667dbd3d"
+hash = "c04958ac7c8df258be4155ddf0ba24b72fadc0918d830045f68a76825faf35c5"
 metafile = true
 
 [[files]]
 file = "mods/dynamic-fps.pw.toml"
-hash = "ffc1f6d147394bfeb65b2fb9a78ca7d3365cbf5192c31af1312bc899190e4e34"
+hash = "0ada4f3b91ee6a4cd40c8e9bcb69a3d59c24ff3940762efca9253b269af1eb25"
 metafile = true
 
 [[files]]
@@ -66,7 +66,7 @@ metafile = true
 
 [[files]]
 file = "mods/fabric-api.pw.toml"
-hash = "1918aa326b46eb07df8cfcc173b089a55e0334336aa71ad3d211be90dfbe6616"
+hash = "68a7ae55f43cf6c9ddf2e3e091705538bfc5d20b7e24b38afaa4e221bbcd3979"
 metafile = true
 
 [[files]]
@@ -131,7 +131,7 @@ metafile = true
 
 [[files]]
 file = "mods/mouse-wheelie.pw.toml"
-hash = "ecb83c2fa2acb8ae445a0fbd573a05955038e7bf97f6d7bb6d2bdd98f082853d"
+hash = "a83db6f7f755d1a3eb8452f88d1871586dce2b1bca6c7a39d2fb0109ea55420d"
 metafile = true
 
 [[files]]
@@ -141,7 +141,7 @@ metafile = true
 
 [[files]]
 file = "mods/roughly-enough-items.pw.toml"
-hash = "506306a2f231c8e93dde883cc1c90a15b83219a4f3f03addd51e860ab67bc0a6"
+hash = "60d50882a3d9f4f8ffd0667061c285a97873b63b4ad7dec3df38ba8eb17ec1b5"
 metafile = true
 
 [[files]]
@@ -161,7 +161,7 @@ metafile = true
 
 [[files]]
 file = "mods/starlight.pw.toml"
-hash = "0212996355de904aa968661624fd9230d1b31d85b201b9ab01bb9e94ac0fe73c"
+hash = "be68ef606c339bbb22f2b812db1e5264d9e3335befc0c348d4dc91a8a3e72e17"
 metafile = true
 
 [[files]]
@@ -171,7 +171,7 @@ metafile = true
 
 [[files]]
 file = "mods/toms-storage.pw.toml"
-hash = "3cfbf51e394eb598d809eb898dfe7f48f96cf0c7f5c649d2f5a52a26acf7444d"
+hash = "fea710dda5093afe5ac709789b7194021efd126ffcfec2cc89b86c6c8aa980e7"
 metafile = true
 
 [[files]]
@@ -186,20 +186,20 @@ metafile = true
 
 [[files]]
 file = "mods/wthit.pw.toml"
-hash = "da41d3b09021766acc5fc1135b79d62fe7e468a1eb7be95b10b5a1d330329f0e"
+hash = "2f211d656ea7a7e2c0d862193c22f5fdd0358a2643b119c25291b009ea6b0c6e"
 metafile = true
 
 [[files]]
 file = "mods/xaeros-minimap.pw.toml"
-hash = "677e6eb10c7aa494473d1c9b55eaf54e4389ac19f7131564a153f81b43da45f2"
+hash = "0807ea6c2d331838aee23ec8f6b41fe16fdab2869326306a637986962343b77f"
 metafile = true
 
 [[files]]
 file = "mods/xaeros-world-map.pw.toml"
-hash = "5e14ee3730e67f5f210ec4797bb9420073403ec1925e755c43c802b38a76ad19"
+hash = "4ff08115d4dec034c1fa2a5b933daf38cf4dfc31282b8e7ffa04db89c1cd307b"
 metafile = true
 
 [[files]]
 file = "mods/zoomify.pw.toml"
-hash = "9269cc9d61c5a6617f66fd711b58abffdc01e2af37bceb6c4264f8405f6da237"
+hash = "eda1cc1a41819d633cc5161ea985aa3f4cbf8f7901496bbde160c885ea808628"
 metafile = true
