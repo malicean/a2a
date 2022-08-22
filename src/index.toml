@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "credits.md"
-hash = "0b75df63f9f4990683512d4020c392c33f2a7089738475c2ac3a99acdd0013dd"
+hash = "5ae72627fef32d34cea0e2947a52270c0cec854223c8ac5ef159464c3de2953c"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"
@@ -41,7 +41,7 @@ metafile = true
 
 [[files]]
 file = "mods/chunky.pw.toml"
-hash = "c655002fad2689f9f413134334319d1b03e2499c5b81cb9a28d9e37b7c02d706"
+hash = "6b3d18fbca74eb064c66a70072d954b46413fe03b726691b5a14a611ebd8d326"
 metafile = true
 
 [[files]]
