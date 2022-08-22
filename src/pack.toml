@@ -1,13 +1,13 @@
 name = "Ashes to Ash's"
 author = "Ash"
-version = "5.0.1"
+version = "6.0.0"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "638bfd5f67ab69841baa7f9037f3e1f41f9f031ee8348851cb63ce93337879fd"
+hash = "fdc8280952652f5ed0ab76f472f217795f67599780aad144fae92a8a5eab1578"
 
 [versions]
 minecraft = "1.19"
-quilt = "0.17.0"
+quilt = "0.17.3"
